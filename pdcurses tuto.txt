@@ -1,0 +1,30 @@
+1. Open powershell
+
+2. Download repo by:
+ 
+git clone https://github.com/microsoft/vcpkg.git
+cd vcpkg 
+
+3. Build vcpkg by:
+
+.\bootstrap-vcpkg.bat
+
+4. Install pdcurses by:
+
+.\vcpkg install pdcurses 
+
+5. Add integration with VS by:
+
+.\vcpkg integrate install
+
+6. Restart visual studio
+
+7. Add #include <curses.h> to your code
+
+
+
+Based on:
+https://learn.microsoft.com/pl-pl/vcpkg/get_started/overview
+https://stackoverflow.com/questions/42708392/install-pdcurses-on-visual-studio-2017
+
+
